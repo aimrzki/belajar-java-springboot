@@ -25,6 +25,7 @@ public class SecurityConfig {
     }
 
     @Bean
+    //Testing push development
     public WebSecurityCustomizer webSecurityCustomizer() {
         return (web) -> web.ignoring().requestMatchers("/resources/**"); // Ignore static resources (if any)
     }
